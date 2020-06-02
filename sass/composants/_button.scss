@@ -1,0 +1,39 @@
+.button {
+  border-radius: 10px;
+  height: 100px;
+  margin: auto;
+  width: 100px;
+  @media screen and (max-width: 576px) {
+    // width: 80px;
+  }
+
+  &--git {
+
+    &:hover {
+      background-color: $black;
+      transition: 500ms;
+    }
+  }
+
+  &--facebook {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+      background-color: $color-fb;
+      transition: 500ms;
+    }
+  }
+
+  &--linkedin {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+      background-color: $color-linkedin;
+      transition: 500ms;
+    }
+  }
+}

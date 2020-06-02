@@ -1,0 +1,15 @@
+{
+  "name": "mon-cv",
+  "version": "1.0.0",
+  "description": "Cv de Clément DUHIN Apprenti dev web",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./main.scss ./css/main.css --style compressed",
+    "browser": "browser-sync start --server --files:'.css/*css'",
+    "prefix": "postcss ./css/main.css --use autoprefixer -d ./css"
+  },
+  "author": "Clément DUHIN",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "devDependencies": {}
+}

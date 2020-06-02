@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: top right/100% url("../image/background.jpg") no-repeat fixed;
+    display: flex;
+  @media screen and (max-width: 576px) {
+    background: none;
+    background-color: $color-background-mobile;
+    display: block;
+  }
+}

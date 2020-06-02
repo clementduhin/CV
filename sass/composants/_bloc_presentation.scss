@@ -1,0 +1,38 @@
+.bloc_presentation {
+  text-align: center;
+
+  &__title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3rem;
+    margin-top: 30px;
+    @media screen and (max-width: 576px) {
+      font-size: 2rem;
+    }
+  }
+
+  &__text {
+    font-family: Candara, sans-serif;
+    font-size: 1.5rem;
+    margin: 30px;
+    text-align: left;
+    @media screen and (max-width: 576px) {
+      font-size: 1rem;
+      margin: 15px;
+    }
+
+    & p {
+      padding-bottom: 1rem;
+    }
+
+    & p:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  &__arrow {
+    @media screen and (max-width: 576px) {
+      height: 0;
+      width: 0;
+    }
+  }
+}
