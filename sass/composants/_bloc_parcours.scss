@@ -4,74 +4,78 @@
   &__title {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 3rem;
-    margin: 30px;
+    margin: 30px auto 100px auto;
     @media screen and (max-width: 576px) {
       font-size: 2rem;
+    }
+  }
+
+  &__arrow {
+    margin-top: 250px;
+
+    & img {
+      @media screen and (max-width: 576px) {
+        height: 0;
+        width: 0;
+      }
+    }
+
+    &:hover {
+      transition: 500ms;
+      transform: scale(1.2);
     }
   }
 }
 
 .chrono {
-  width: 88%;
   margin: auto;
+  width: 88%;
 
   &__name_up {
     display: flex;
+    font-family: Candara, sans-serif;
     justify-content: space-between;
     text-transform: uppercase;
-    font-family: Candara, sans-serif;
   }
 
   &__line_up {
     display: flex;
-    justify-content: space-between;
     height: 50px;
+    justify-content: space-between;
     margin: 0 20px;
     @media screen and (max-width: 576px) {
       height: 50px;
     }
 
     & div {
-      width: 1px;
       border-left: $black 1px solid;
+      width: 1px;
     }
   }
 
   &__frise {
-    height: 30px;
-    width: 100%;
     background-color: $color-marron;
     display: flex;
+    height: 30px;
+    width: 100%;
+    border-radius: 10px;
 
     &__date {
-      height: 100%;
-      width: 20%;
-      display: flex;
+      background-color: $color-marron;
       align-items: center;
+      border: rgba($color: $black, $alpha: .3) .5px solid;
+      display: flex;
+      height: 100%;
       justify-content: center;
-      border: $black 0.5px solid;
-    }
-  }
+      width: 20%;
+      border-radius: 10px;
+      cursor: pointer;
 
-  &__line_down {
-    display: flex;
-    justify-content: space-around;
-    height: 50px;
-    margin: 0 20px;
-    @media screen and (max-width: 576px) {
-      height: 50px;
+      &:hover {
+        transition: 300ms;
+        transform: scale(1.2);
+        box-shadow: .3em .3em rgba($color: $black, $alpha: .3);
+      }
     }
-
-    & div {
-      width: 1px;
-      border-left: $black 1px solid;
-    }
-  }
-
-  &__name_down {
-    display: flex;
-    justify-content: space-around;
-    text-transform: uppercase;
-    font-family: Candara, sans-serif;
   }
 }

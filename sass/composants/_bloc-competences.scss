@@ -1,0 +1,24 @@
+.logo-competences {
+    display: flex;
+    height: 600px;
+    width: 90%;
+    flex-wrap: wrap;
+    
+
+    &__img {
+        margin: 60px;
+    }
+}
+
+.bloc-competences {
+    text-align: center;
+
+    &__title {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 3rem;
+        margin: 30px auto 100px auto;
+        @media screen and (max-width: 576px) {
+          font-size: 2rem;
+        }
+      }
+}
