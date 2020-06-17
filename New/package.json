@@ -1,0 +1,13 @@
+{
+  "name": "index",
+  "version": "1.0.0",
+  "description": "CV de Clément DUHIN",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./main.scss ./css/style.css --style compressed",
+    "browser": "browser-sync start --server --files:'.css/*css'",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css"
+  },
+  "author": "",
+  "license": "ISC"
+}
