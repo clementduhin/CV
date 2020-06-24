@@ -1,0 +1,85 @@
+.button {
+  height: 80px;
+  border: $black solid 1px;
+  border-radius: 3px;
+  box-shadow: 1px 2px 3px $black;
+  width: 390px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: default;
+  font-size: 1.8rem;
+
+  @media all and (max-width: 576px) {
+    width: 90%;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  & img {
+    height: 90%;
+  }
+
+  &--git {
+    display: flex;
+    justify-content: space-around;
+
+
+    &:visited {
+      color: $blue;
+    }
+
+    &:hover {
+      background-color: $black;
+      color: $white;
+      transition: 500ms;
+      cursor: pointer;
+    }
+  }
+
+  &--facebook {
+    display: flex;
+    justify-content: space-around;
+
+    &:visited {
+      color: $blue;
+    }
+
+    &:hover {
+      background-color: $color-fb;
+      color: $white;
+      transition: 500ms;
+      cursor: pointer;
+    }
+  }
+
+  &--linkedin {
+    display: flex;
+    justify-content: space-around;
+
+    &:visited {
+      color: $blue;
+    }
+
+    &:hover {
+      background-color: $color-linkedin;
+      color: $white;
+      transition: 500ms;
+      cursor: pointer;
+    }
+  }
+
+}
+
+.hidden {
+    background-color: $blue;
+    color: $white;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+    & p {
+      display: block;
+      margin-top: 17px;
+    }
+}

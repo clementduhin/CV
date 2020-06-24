@@ -4,3 +4,11 @@
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+
+  &:visited {
+    color: none;
+  }
+}
+

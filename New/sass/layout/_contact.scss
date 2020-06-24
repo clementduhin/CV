@@ -1,0 +1,41 @@
+.contact {
+  background-color: $white;
+  height: 1010px;
+  display: flex;
+  flex-direction: column;
+
+  @media all and (max-width: 576px) {
+    height: auto;
+  }
+
+  @media (min-width: 576px) and (max-width: 1300px) {
+    height: auto;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    padding: 60px 0;
+    text-align: center;
+
+    @media all and (max-width: 576px) {
+      font-size: 1.3rem;
+      padding: 30px 0;
+		}
+  }
+
+  &__bloc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 100px 0;
+
+    @media all and (max-width: 576px) {
+      margin: 0;
+    }
+
+    @media (min-width: 576px) and (max-width: 1300px) {
+      margin: 80px 0;
+    }
+  }
+}
+

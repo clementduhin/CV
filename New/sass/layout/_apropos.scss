@@ -1,0 +1,74 @@
+.apropos {
+  background-color: $white;
+  // border: $black .5px solid;
+  color: $blue;
+  font-weight: 600;
+  height: 650px;
+
+  @media (min-width: 576px) and (max-width: 1300px) {
+    height: 500px;
+	}
+
+  @media all and (max-width: 576px) {
+    height: 400px;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+		padding: 60px 0;
+		text-align: center;
+		
+		@media all and (max-width: 576px) {
+			font-size: .7rem;
+			padding: 15px 0;
+		}
+
+  @media (min-width: 576px) and (max-width: 1300px) {
+    // font-size: 1rem;
+    padding: 60px 0;
+  }
+}
+
+  &__imagetext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+
+    @media all and (max-width: 576px) {
+        display: block;
+        text-align: center;
+        padding-right: 0;
+      }
+    }
+
+    &__image {
+    margin: 0 50px;
+
+    @media all and (max-width: 576px) {
+        height: 150px;
+        margin-bottom: 15px;
+      }
+
+    @media (min-width: 576px) and (max-width: 1300px) {
+        height: 200px;
+      }
+
+    & img {
+        height: 100%;
+        width: auto;
+    }
+    }
+
+    &__text {
+    font-size: 1.8rem;
+
+    @media all and (max-width: 576px) {
+        font-size: .7rem;
+      }
+
+    @media (min-width: 576px) and (max-width: 1300px) {
+        font-size: 1.3rem;
+      }
+    }
+    }
